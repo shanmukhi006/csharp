@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            //String age = Console.ReadLine();
+            //int number = Convert.ToInt32(age);
+            //if (number > 18)
+            //{
+            //    Console.WriteLine("you are  elgible");
+
+            //}
+            //else if(number>80)
+            //{
+            //    Console.WriteLine("You are senior citizen");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are not elgible");
+            //}
+
+
+            //Switch statement
+            String strAge=Console.ReadLine();
+            int age = Convert.ToInt32(strAge);
+
+            switch (age)
+            {
+                case 18:
+                    Console.WriteLine("Pass");
+                    break;
+
+                case 20:
+                    Console.WriteLine("Over qualified");
+                    break;
+
+                default:
+                    Console.WriteLine("not qualified");
+                    break;
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
